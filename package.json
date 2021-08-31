@@ -1,0 +1,32 @@
+{
+  "name": "cthooks",
+  "version": "1.0.0",
+  "description": "Additional hooks for ahooks and react-use",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codetech-org/cthooks.git"
+  },
+  "author": "codetech.org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codetech-org/cthooks/issues"
+  },
+  "homepage": "https://github.com/codetech-org/cthooks#readme",
+  "devDependencies": {
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/react-hooks": "^7.0.1",
+    "@types/jest": "^27.0.1",
+    "@types/react": "^17.0.19",
+    "jest": "^27.1.0",
+    "lerna": "^4.0.0",
+    "prettier": "^2.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2"
+  }
+}

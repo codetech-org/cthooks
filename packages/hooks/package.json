@@ -1,0 +1,26 @@
+{
+  "name": "hooks",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "codetech.org",
+  "homepage": "https://github.com/codetech-org/cthooks/tree/main/packages/hooks#readme",
+  "license": "MIT",
+  "main": "lib/hooks.js",
+  "directories": {
+    "lib": "lib",
+    "test": "src/useRefState/__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codetech-top/cthooks.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/codetech-top/cthooks/issues"
+  }
+}
