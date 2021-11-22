@@ -12,8 +12,19 @@ function useRefState(initState?: unknown) {
   const [state, setState] = useState(initState);
   const ref = useRef(initState);
   const setStateProxy: typeof setState = useCallback((value) => {
-    ref.current = typeof value === 'function' ? value(ref.current) : value;
-    setState(value);
+    const handlers: ProxyHandler<any> = {
+      apply(target, _thisArg, args) {
+        const result = target(...args);
+        ref.current = result;
+        return result;
+      },
+    };
+    if (typeof value === 'function') {
+      setState(new Proxy(value, handlers));
+    } else {
+      ref.current = value;
+      setState(value);
+    }
   }, []);
   return [{ state, ref }, setStateProxy];
 }
